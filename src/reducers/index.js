@@ -1,8 +1,23 @@
 
 export const initialState = {
+    smurfs : [],
+    appLoading : false,
+    errorText : ''
 }
 
-const reducer = ()=>{
+const reducer = (state, action)=>{
+    switch(action.type) {
+        case 'START_OF_API':
+            return '';
+        case 'END_OF_API':
+            return '';
+        case 'ADD_SMURF':
+            return '';
+        case 'SET_ERROR':
+            return '';
+        default:
+            return state;
+    }
 }
 
 export default reducer;
