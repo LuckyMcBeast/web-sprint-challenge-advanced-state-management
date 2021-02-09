@@ -9,10 +9,13 @@ import App from "./App";
 const { worker } = require('./mocks/browser');
 worker.start();
 
+const store = createStore(() => {})
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
-    <App />, 
+    <Provider store={store}>
+        <App />
+    </Provider>, 
     rootElement
 );
 
