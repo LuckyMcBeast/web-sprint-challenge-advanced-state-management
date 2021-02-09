@@ -26,8 +26,8 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
 * [x] Create a new working branch: git checkout -b `<firstName-lastName>`.
 * [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [x] Push commits: git push origin `<firstName-lastName>`.
-* [ ] **RUN** `npm install` to install your dependencies.
-* [ ] **RUN** `npm start` to start your application.
+* [x] **RUN** `npm install` to install your dependencies.
+* [x] **RUN** `npm start` to start your application.
 
 ### Task 2: CodeGrade Setup
 
