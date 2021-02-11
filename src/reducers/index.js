@@ -1,3 +1,4 @@
+import * as actions from '../actions'
 
 export const initialState = {
     smurfs : [],
@@ -5,16 +6,28 @@ export const initialState = {
     errorText : ''
 }
 
-const reducer = (state, action)=>{
+const reducer = (state = initialState, action)=>{
     switch(action.type) {
-        case 'START_OF_API':
-            return '';
-        case 'END_OF_API':
-            return '';
-        case 'ADD_SMURF':
-            return '';
-        case 'SET_ERROR':
-            return '';
+        case actions.FETCH_SMURFS_START:
+            return {
+                ...state,
+                appLoading : true,
+                errorText : ''
+            };
+        case actions.FETCH_SMURFS_SUCCESS:
+            return {
+                ...state,
+                smurfs : action.payload,
+                appLoading : false,
+                errorText : ''
+            };
+        case actions.FETCH_SMURFS_FAIL:
+            return {
+                ...state,
+                errorText : action.payload
+            };
+        case actions.ADD_SMURF:
+            return state;
         default:
             return state;
     }
