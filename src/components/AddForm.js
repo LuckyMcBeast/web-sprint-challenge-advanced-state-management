@@ -37,6 +37,9 @@ class AddForm extends React.Component {
             existingSmurf.name === this.state.name)).length > 0){
             this.props.updateFormError("Smurf by that name already exist")
         }
+        else {
+            
+        }
     }
 
     render() {
