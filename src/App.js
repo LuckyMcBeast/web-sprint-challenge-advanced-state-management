@@ -26,4 +26,4 @@ class App extends Component {
 export default App;
 
 //Task List:
-//1. Add in SmurfDisplay and AddForm into your application.
+//1. Add in SmurfDisplay and AddForm into your application. COMPLETE
