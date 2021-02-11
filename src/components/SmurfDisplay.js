@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { getSmurfs } from '../actions'
 import Smurf from './Smurf'
-import _ from 'lodash'
+
 
 
 class SmurfDisplay extends React.Component {

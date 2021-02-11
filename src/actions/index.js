@@ -19,11 +19,19 @@ export const ADD_SMURF = "ADD_SMURF";
 export const FETCH_SMURFS_START = "FETCH_SMURFS_START";
 export const FETCH_SMURFS_SUCCESS = "FETCH_SMURFS_SUCCESS";
 export const FETCH_SMURFS_FAIL = "FETCH_SMURFS_FAIL";
+export const UPDATE_FORM_ERROR = "UPDATE_FORM_ERROR";
 
 export const addSmurf = (smurf) => {
     return {
         type: ADD_SMURF,
         payload : smurf
+    }
+}
+
+export const updateFormError = (error) => {
+    return {
+        type: "UPDATE_FORM_ERROR",
+        payload: error
     }
 }
 

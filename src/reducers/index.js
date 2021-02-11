@@ -26,6 +26,11 @@ const reducer = (state = initialState, action)=>{
                 ...state,
                 errorText : action.payload
             };
+        case actions.UPDATE_FORM_ERROR:
+            return {
+                ...state,
+                errorText: action.payload
+            }
         case actions.ADD_SMURF:
             return state;
         default:
